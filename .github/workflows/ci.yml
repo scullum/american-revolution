@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Unit tests
+        run: |
+          if [ -d tests ]; then node --test tests/; else echo "no tests/ directory yet"; fi
+      - name: Release notes check
+        if: github.event_name == 'pull_request'
+        run: node .github/scripts/check-release-notes.mjs "${{ github.event.pull_request.base.sha }}"
