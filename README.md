@@ -1,6 +1,12 @@
 # american-revolution
 A simple one-page overview of the American Revolution
 
+## Contributing
+
+Want to add to the timeline? **[Start here: School for Contributors](docs/README.md)**
+
+The School teaches you everything you need to know in eight short lessons (20 minutes total). You'll learn the format, the rules, and how to ship your first contribution.
+
 ## 1770s - Revolution and Independence
 The decade of revolution: the Boston Tea Party (1773), the First Continental Congress (1774), the battles of Lexington and Concord (1775), the Declaration of Independence (1776), and the ongoing Revolutionary War that would secure American independence.
 
