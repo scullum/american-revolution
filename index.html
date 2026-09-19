@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>North American History Timeline</title>
+    <style>
+        body {
+            font-family: Georgia, serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .toggle-container {
+            text-align: center;
+            margin: 30px 0;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .toggle-button {
+            padding: 12px 30px;
+            margin: 0 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border: 2px solid #333;
+            background-color: white;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+        .toggle-button.active {
+            background-color: #333;
+            color: white;
+        }
+        .toggle-button:hover {
+            background-color: #555;
+            color: white;
+        }
+        .content {
+            display: none;
+        }
+        .content.active {
+            display: block;
+        }
+        .decade {
+            background-color: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        h2 {
+            color: #444;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>North American History Timeline</h1>
+    
+    <div class="toggle-container">
+        <button class="toggle-button active" onclick="showCountry('usa')">United States</button>
+        <button class="toggle-button" onclick="showCountry('canada')">Canada</button>
+    </div>
+
+    <div id="usa-content" class="content active">
+
+        <div class="decade">
+            <h2>1770s - Revolution and Independence</h2>
+            <p>The decade of revolution: the Boston Tea Party (1773), the First Continental Congress (1774), the battles of Lexington and Concord (1775), the Declaration of Independence (1776), and the ongoing Revolutionary War that would secure American independence.</p>
+        </div>
+
+        <div class="decade">
+            <h2>1780s - Constitution and New Nation</h2>
+            <p>The Revolutionary War concluded with the Treaty of Paris (1783). The Articles of Confederation proved inadequate, leading to the Constitutional Convention (1787) and ratification of the U.S. Constitution (1788). George Washington became the first president (1789).</p>
+        </div>
+
+        <div class="decade">
+            <h2>1790s - Federalist Era</h2>
+            <p>The new government took shape under Washington and Adams. The Bill of Rights was ratified (1791), the First Bank of the United States was established, and political parties emerged. The Whiskey Rebellion (1794) tested federal authority.</p>
+        </div>
+
+        <div class="decade">
+            <h2>1800s - Jeffersonian Democracy</h2>
+            <p>Thomas Jefferson's election (1800) marked the first peaceful transfer of power between parties. The Louisiana Purchase (1803) doubled the nation's size. The Lewis and Clark expedition (1804-1806) explored the new territory.</p>
+        </div>
+
+        <div class="decade">
+            <h2>1810s - War and Expansion</h2>
+            <p>The War of 1812 against Britain tested the young nation. The war ended in stalemate (1815), but fostered American nationalism. The Era of Good Feelings began, and westward expansion accelerated.</p>
+        </div>
+
+        <div class="decade">
+            <h2>1820s - Growth and Tension</h2>
+            <p>The Missouri Compromise (1820) temporarily resolved slavery expansion debates. The Monroe Doctrine (1823) asserted American influence in the Western Hemisphere. The Erie Canal opened (1825), transforming commerce.</p>
+        </div>
+
+        <div class="decade">
+            <h2>1830s - Jacksonian Democracy</h2>
+            <p>Andrew Jackson's presidency brought expanded voting rights for white men and the controversial Indian Removal Act (1830). The Trail of Tears forced Native Americans westward. Economic panic struck in 1837.</p>
+        </div>
+
+        <div class="decade">
+            <h2>1840s - Manifest Destiny</h2>
+            <p>The concept of Manifest Destiny drove westward expansion. Texas was annexed (1845), the Mexican-American War (1846-1848) added vast territories, and the California Gold Rush began (1849).</p>
+        </div>
+
+        <div class="decade">
+            <h2>1850s - Road to Civil War</h2>
+            <p>The Compromise of 1850, Kansas-Nebraska Act (1854), and Dred Scott decision (1857) intensified sectional conflict over slavery. The Republican Party formed, and John Brown's raid (1859) heightened tensions.</p>
+        </div>
+
+        <div class="decade">
+            <h2>1860s - Civil War and Reconstruction</h2>
+            <p>Abraham Lincoln's election (1860) triggered Southern secession. The Civil War (1861-1865) claimed over 600,000 lives. The Emancipation Proclamation (1863) and 13th Amendment (1865) ended slavery. Lincoln was assassinated (1865). Reconstruction began.</p>
+        </div>
+
+        <div class="decade">
+            <h2>1870s - Reconstruction and Industrialization</h2>
+            <p>Reconstruction continued with the 14th and 15th Amendments guaranteeing citizenship and voting rights. Federal troops withdrew from the South (1877), ending Reconstruction. Industrialization accelerated, and the Gilded Age began.</p>
+        </div>
+
+        <div class="decade">
+            <h2>1880s - Gilded Age</h2>
+            <p>Rapid industrial growth, railroad expansion, and massive immigration transformed America. Labor unrest grew, including the Haymarket Affair (1886). The American Federation of Labor was founded (1886).</p>
+        </div>
+
+        <div class="decade">
+            <h2>1890s - Progressive Era Begins</h2>
+            <p>The frontier was declared closed (1890). Economic depression struck (1893). The Spanish-American War (1898) made America a colonial power. Progressive reform movements gained momentum.</p>
+        </div>
+
+        <div class="decade">
+            <h2>1900s - Progressive Reform</h2>
+            <p>Theodore Roosevelt's presidency brought trust-busting and conservation. The Wright brothers achieved powered flight (1903). The Pure Food and Drug Act and Meat Inspection Act passed (1906).</p>
+        </div>
+
+        <div class="decade">
+            <h2>1910s - World War I</h2>
+            <p>World War I began in Europe (1914); America entered in 1917. Women's suffrage was achieved with the 19th Amendment (1920, ratified in this decade's aftermath). Prohibition began (1920).</p>
+        </div>
+
+        <div class="decade">
+            <h2>1920s - Roaring Twenties</h2>
+            <p>Post-war prosperity, jazz culture, and social change defined the decade. Mass production and consumerism flourished. The stock market crashed in 1929, ending the boom.</p>
+        </div>
+
+        <div class="decade">
+            <h2>1930s - Great Depression and New Deal</h2>
+            <p>The Great Depression devastated the economy. Franklin D. Roosevelt's New Deal programs (1933-1939) provided relief and reform. Labor unions grew stronger. World War II began in Europe (1939).</p>
+        </div>
+
+        <div class="decade">
+            <h2>1940s - World War II and Post-War</h2>
+            <p>America entered World War II after Pearl Harbor (1941). The war ended with Allied victory in Europe and Japan (1945), including the atomic bombings. The United Nations was founded (1945). The Cold War began.</p>
+        </div>
+
+        <div class="decade">
+            <h2>1950s - Cold War and Prosperity</h2>
+            <p>Post-war prosperity and suburban growth. The Korean War (1950-1953). McCarthyism and anti-communist fervor. The Civil Rights Movement gained momentum with Brown v. Board of Education (1954) and the Montgomery Bus Boycott (1955-1956).</p>
+        </div>
+
+        <div class="decade">
+            <h2>1960s - Civil Rights and Vietnam</h2>
+            <p>The Civil Rights Act (1964) and Voting Rights Act (1965) advanced equality. The Vietnam War escalated and divided the nation. President Kennedy was assassinated (1963). The counterculture movement emerged. Moon landing (1969).</p>
+        </div>
+
+        <div class="decade">
+            <h2>1970s - Turmoil and Transition</h2>
+            <p>The Vietnam War ended (1975). Watergate scandal forced Nixon's resignation (1974). Economic stagflation challenged the nation. The environmental movement grew. The Cold War continued with détente.</p>
+        </div>
+
+        <div class="decade">
+            <h2>1980s - Reagan Era</h2>
+            <p>Ronald Reagan's presidency brought conservative policies and increased military spending. The Cold War intensified, then began to thaw. The economy recovered from recession. The personal computer revolution began.</p>
+        </div>
+
+        <div class="decade">
+            <h2>1990s - End of Cold War and Tech Boom</h2>
+            <p>The Cold War ended with the Soviet Union's collapse (1991). The Gulf War (1991) demonstrated American military power. The internet and technology boom transformed the economy. President Clinton was impeached but acquitted (1998-1999).</p>
+        </div>
+    </div>
+
+    <div id="canada-content" class="content">
+        <div class="decade">
+            <h2>1770s - British North America During Revolution</h2>
+            <p>While the Thirteen Colonies rebelled, British North America (Quebec, Nova Scotia, Newfoundland) remained loyal. The Quebec Act (1774) granted religious freedom to Catholics and maintained French civil law. Approximately 40,000-50,000 Loyalists would eventually flee to Canada after the American Revolution.</p>
+        </div>
+
+        <div class="decade">
+            <h2>1780s - Loyalist Migration</h2>
+            <p>The Treaty of Paris (1783) ended the Revolutionary War. Tens of thousands of Loyalists migrated to British North America, particularly to Nova Scotia, New Brunswick (created 1784), and Upper Canada. This migration fundamentally reshaped Canadian demographics and politics.</p>
+        </div>
+
+        <div class="decade">
+            <h2>1790s - Constitutional Act and Division</h2>
+            <p>The Constitutional Act (1791) divided Quebec into Upper Canada (English-speaking, British law) and Lower Canada (French-speaking, French civil law). Each colony received an elected assembly. Lieutenant Governor John Graves Simcoe worked to establish British institutions in Upper Canada.</p>
+        </div>
+
+        <div class="decade">
+            <h2>1800s - Fur Trade and Exploration</h2>
+            <p>The North West Company and Hudson's Bay Company competed fiercely in the fur trade. Alexander Mackenzie had already reached the Pacific (1793). Simon Fraser and David Thompson explored western territories. Settlement remained concentrated in the east.</p>
+        </div>
+
+        <div class="decade">
+            <h2>1810s - War of 1812</h2>
+            <p>The War of 1812 saw American invasions of British North America repelled. Key battles included Queenston Heights (1812) and the burning of York/Toronto (1813). The war strengthened Canadian identity and British-Canadian cooperation. The conflict ended with the Treaty of Ghent (1814).</p>
+        </div>
+
+        <div class="decade">
+            <h2>1820s - Immigration and Settlement</h2>
+            <p>Large-scale British immigration increased, particularly to Upper Canada. The Rideau Canal was constructed (1826-1832) for military and commercial purposes. Economic development accelerated, though political tensions grew between elected assemblies and appointed governors.</p>
+        </div>
+
+        <div class="decade">
+            <h2>1830s - Rebellions and Reform</h2>
+            <p>Political frustrations erupted in the Rebellions of 1837-1838 in both Upper and Lower Canada. William Lyon Mackenzie and Louis-Joseph Papineau led unsuccessful uprisings. Lord Durham was sent to investigate, producing the Durham Report (1839) recommending responsible government and assimilation of French Canadians.</p>
+        </div>
+
+        <div class="decade">
+            <h2>1840s - Union and Responsible Government</h2>
+            <p>The Act of Union (1840) merged Upper and Lower Canada into the Province of Canada. Responsible government was gradually achieved (1848-1849), giving elected assemblies real power. The Reform movement succeeded. Economic growth continued with railway construction beginning.</p>
+        </div>
+
+        <div class="decade">
+            <h2>1850s - Railway Era and Reciprocity</h2>
+            <p>Railway construction boomed, including the Grand Trunk Railway. The Reciprocity Treaty (1854) with the United States increased trade. The Province of Canada experienced political deadlock between Canada East (Quebec) and Canada West (Ontario), spurring confederation discussions.</p>
+        </div>
+
+        <div class="decade">
+            <h2>1860s - Confederation</h2>
+            <p>The Charlottetown (1864) and Quebec (1864) Conferences laid groundwork for confederation. The British North America Act (1867) created the Dominion of Canada, uniting Ontario, Quebec, New Brunswick, and Nova Scotia. Sir John A. Macdonald became the first Prime Minister. Canada purchased Rupert's Land from the Hudson's Bay Company (1869).</p>
+        </div>
+
+        <div class="decade">
+            <h2>1870s - Expansion and Red River</h2>
+            <p>Manitoba joined Confederation (1870) after the Red River Rebellion led by Louis Riel. British Columbia joined (1871) with the promise of a transcontinental railway. Prince Edward Island joined (1873). The North-West Mounted Police was established (1873). Economic depression struck mid-decade.</p>
+        </div>
+
+        <div class="decade">
+            <h2>1880s - National Policy and Railway</h2>
+            <p>Macdonald's National Policy promoted protective tariffs and western settlement. The Canadian Pacific Railway was completed (1885), linking east and west. The North-West Rebellion (1885) led by Louis Riel was suppressed; Riel was executed, creating lasting tensions between English and French Canada.</p>
+        </div>
+
+        <div class="decade">
+            <h2>1890s - Laurier Era Begins</h2>
+            <p>Wilfrid Laurier became Canada's first French-Canadian Prime Minister (1896). The Klondike Gold Rush (1896-1899) brought attention to the Yukon. Immigration increased dramatically. The Manitoba Schools Question highlighted English-French tensions. Economic prosperity returned.</p>
+        </div>
+
+        <div class="decade">
+            <h2>1900s - Immigration and Growth</h2>
+            <p>Massive immigration transformed western Canada. Saskatchewan and Alberta became provinces (1905). The wheat economy boomed. Canada asserted more autonomy in foreign affairs. The Naval Service Act (1910) created a Canadian navy, sparking debate about imperial relations.</p>
+        </div>
+
+        <div class="decade">
+            <h2>1910s - World War I</h2>
+            <p>Canada entered World War I (1914) as part of the British Empire. Over 600,000 Canadians served; 60,000 died. Major battles included Vimy Ridge (1917), a defining moment of Canadian identity. The Conscription Crisis (1917) divided English and French Canada. Women gained federal voting rights (1918). Canada signed the Treaty of Versailles independently (1919).</p>
+        </div>
+
+        <div class="decade">
+            <h2>1920s - Post-War and Autonomy</h2>
+            <p>Post-war economic boom and social change. The Winnipeg General Strike (1919) marked labor unrest. The Progressive Party emerged. The Balfour Declaration (1926) recognized Canada's autonomy. Canada joined the League of Nations independently. Prohibition ended in most provinces. The "Roaring Twenties" brought cultural change.</p>
+        </div>
+
+        <div class="decade">
+            <h2>1930s - Great Depression</h2>
+            <p>The Great Depression devastated Canada's economy, particularly the Prairies hit by drought. Unemployment reached 27%. R.B. Bennett's Conservative government struggled with relief efforts. The Co-operative Commonwealth Federation (CCF) was founded (1932). The Statute of Westminster (1931) granted full legislative independence. William Lyon Mackenzie King returned as Prime Minister (1935).</p>
+        </div>
+
+        <div class="decade">
+            <h2>1940s - World War II and Post-War</h2>
+            <p>Canada declared war on Germany (1939), one week after Britain, asserting independence. Over one million Canadians served. Major contributions included the Battle of the Atlantic, D-Day, and liberation of the Netherlands. The economy boomed with war production. Newfoundland joined Confederation (1949). Canada was a founding member of NATO (1949) and the UN (1945).</p>
+        </div>
+
+        <div class="decade">
+            <h2>1950s - Post-War Prosperity</h2>
+            <p>Post-war economic boom and suburban expansion. The Trans-Canada Highway was built. The St. Lawrence Seaway opened (1959). The Avro Arrow jet fighter was developed then cancelled (1959). The Korean War (1950-1953) saw Canadian participation. Television and consumer culture flourished. Immigration increased from diverse sources.</p>
+        </div>
+
+        <div class="decade">
+            <h2>1960s - Quiet Revolution and Identity</h2>
+            <p>The Quiet Revolution transformed Quebec society, modernizing and secularizing the province. The Royal Commission on Bilingualism and Biculturalism (1963) examined English-French relations. Canada adopted a new flag (1965). The Centennial celebrations (1967) marked 100 years of Confederation. Expo 67 in Montreal showcased Canada. Pierre Trudeau became Prime Minister (1968). The Official Languages Act (1969) made Canada officially bilingual.</p>
+        </div>
+
+        <div class="decade">
+            <h2>1970s - Trudeau Era and October Crisis</h2>
+            <p>The October Crisis (1970) saw FLQ terrorists kidnap and murder Quebec politician Pierre Laporte; the War Measures Act was invoked. The Parti Québécois came to power in Quebec (1976). Multiculturalism became official policy (1971). Canada recognized the People's Republic of China (1970). The energy crisis affected the economy. Immigration from Asia and the Caribbean increased.</p>
+        </div>
+
+        <div class="decade">
+            <h2>1980s - Constitution and Free Trade</h2>
+            <p>The Quebec referendum on sovereignty-association was defeated (1980). The Constitution was patriated (1982) with the Charter of Rights and Freedoms, though Quebec didn't sign. Brian Mulroney became Prime Minister (1984). The Canada-US Free Trade Agreement was signed (1988), sparking intense debate. The Meech Lake Accord (1987) failed to bring Quebec into the constitutional fold.</p>
+        </div>
+
+        <div class="decade">
+            <h2>1990s - NAFTA and National Unity</h2>
+            <p>NAFTA came into effect (1994). The second Quebec referendum on sovereignty narrowly failed (1995) with 50.6% voting "No". The Charlottetown Accord was rejected (1992). Jean Chrétien became Prime Minister (1993). The Reform Party emerged in the West. The Oka Crisis (1990) highlighted Indigenous rights issues. The Somalia Affair damaged the military's reputation. The federal budget was balanced by decade's end.</p>
+        </div>
+    </div>
+
+    <script>
+        function showCountry(country) {
+            // Hide all content
+            document.getElementById('usa-content').classList.remove('active');
+            document.getElementById('canada-content').classList.remove('active');
+            
+            // Remove active class from all buttons
+            const buttons = document.querySelectorAll('.toggle-button');
+            buttons.forEach(button => button.classList.remove('active'));
+            
+            // Show selected content and activate button
+            if (country === 'usa') {
+                document.getElementById('usa-content').classList.add('active');
+                buttons[0].classList.add('active');
+            } else if (country === 'canada') {
+                document.getElementById('canada-content').classList.add('active');
+                buttons[1].classList.add('active');
+            }
+        }
+    </script>
+</body>
+</html>
