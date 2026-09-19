@@ -17,7 +17,7 @@ jobs:
           node-version: 22
       - name: Unit tests
         run: |
-          if [ -d tests ]; then node --test tests/; else echo "no tests/ directory yet"; fi
+          if ls tests/*.mjs >/dev/null 2>&1; then node --test tests/*.mjs; else echo "no tests yet"; fi
       - name: Release notes check
         if: github.event_name == 'pull_request'
         run: node .github/scripts/check-release-notes.mjs "${{ github.event.pull_request.base.sha }}"
