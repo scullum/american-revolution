@@ -1,0 +1,32 @@
+[
+  {
+    "year": 1765,
+    "title": "Stamp Act",
+    "summary": "British Parliament imposed direct taxes on the colonies, sparking widespread protests and the rallying cry of 'no taxation without representation.'"
+  },
+  {
+    "year": 1770,
+    "title": "Boston Massacre",
+    "summary": "British soldiers killed five colonists during a confrontation, inflaming anti-British sentiment throughout the colonies."
+  },
+  {
+    "year": 1773,
+    "title": "Boston Tea Party",
+    "summary": "Colonists dumped 342 chests of British tea into Boston Harbor to protest the Tea Act and taxation policies."
+  },
+  {
+    "year": 1775,
+    "title": "Battles of Lexington and Concord",
+    "summary": "The first military engagements of the Revolutionary War began when British troops attempted to seize colonial military supplies."
+  },
+  {
+    "year": 1776,
+    "title": "Declaration of Independence",
+    "summary": "The Continental Congress formally declared the thirteen colonies independent from British rule on July 4th."
+  },
+  {
+    "year": 1781,
+    "title": "Battle of Yorktown",
+    "summary": "American and French forces defeated the British army, effectively ending major combat operations and securing American independence."
+  }
+]
