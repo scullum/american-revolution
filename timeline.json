@@ -12,7 +12,17 @@
   {
     "year": 1773,
     "title": "Boston Tea Party",
-    "summary": "Colonists dumped 342 chests of British tea into Boston Harbor to protest the Tea Act and taxation policies."
+    "summary": "Colonists dumped 342 chests of British tea into Boston Harbor to protest the Tea Act and taxation policies.",
+    "details": {
+      "date": "December 16, 1773",
+      "location": "Boston Harbor, Massachusetts",
+      "participants": "American colonists, many disguised as Mohawk Indians, organized by the Sons of Liberty",
+      "target": "Three British merchant ships: the Dartmouth, the Eleanor, and the Beaver",
+      "amount": "342 chests of tea, valued at approximately £9,000 (roughly $1.7 million in modern currency)",
+      "cause": "Protest against the Tea Act of 1773, which granted the British East India Company a monopoly on tea sales in the colonies and maintained the principle of Parliament's right to tax the colonies",
+      "significance": "The destruction of the tea galvanized colonial resistance, prompted Britain to pass the Coercive Acts (Intolerable Acts) in 1774, and accelerated the path toward revolution",
+      "outcome": "No colonists were killed, but the British response hardened colonial resolve and united the colonies against British rule"
+    }
   },
   {
     "year": 1775,

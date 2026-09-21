@@ -4,6 +4,13 @@ A simple one-page overview of the American Revolution
 ## 1770s - Revolution and Independence
 The decade of revolution: the Boston Tea Party (1773), the First Continental Congress (1774), the battles of Lexington and Concord (1775), the Declaration of Independence (1776), and the ongoing Revolutionary War that would secure American independence.
 
+### The Boston Tea Party (December 16, 1773)
+On a cold December night, American colonists boarded three British merchant ships in Boston Harbor—the Dartmouth, the Eleanor, and the Beaver—and dumped 342 chests of tea into the water. Many of the protesters were disguised as Mohawk Indians, and the action was organized by the Sons of Liberty, a secret resistance organization.
+
+The immediate cause was the Tea Act of 1773, which granted the British East India Company a monopoly on tea sales in the colonies. Though the act actually lowered the price of tea, colonists saw it as another assertion of Parliament's right to tax them without their consent. The underlying grievance remained the same: "no taxation without representation."
+
+The British response was swift and severe. Parliament passed the Coercive Acts (called the Intolerable Acts by colonists) in 1774, closing Boston Harbor until the tea was paid for, revoking Massachusetts' charter, and quartering British troops in colonists' homes. Rather than intimidating the colonies into submission, these punitive measures unified colonial resistance and accelerated the march toward independence. The Boston Tea Party became a defining symbol of colonial defiance and the willingness to take direct action against perceived tyranny.
+
 ## 1780s - Constitution and New Nation
 The Revolutionary War concluded with the Treaty of Paris (1783). The Articles of Confederation proved inadequate, leading to the Constitutional Convention (1787) and ratification of the U.S. Constitution (1788). George Washington became the first president (1789).
 
