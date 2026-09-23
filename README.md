@@ -1,5 +1,5 @@
 # american-revolution
-A simple one-page overview of the American Revolution
+A simple one-page overview of the American Revolution and its global impact
 
 ## 1770s - Revolution and Independence
 The decade of revolution: the Boston Tea Party (1773), the First Continental Congress (1774), the battles of Lexington and Concord (1775), the Declaration of Independence (1776), and the ongoing Revolutionary War that would secure American independence.
@@ -14,8 +14,32 @@ The British response was swift and severe. Parliament passed the Coercive Acts (
 ## 1780s - Constitution and New Nation
 The Revolutionary War concluded with the Treaty of Paris (1783). The Articles of Confederation proved inadequate, leading to the Constitutional Convention (1787) and ratification of the U.S. Constitution (1788). George Washington became the first president (1789).
 
+## The French Revolution (1789-1799)
+The American Revolution inspired revolutionary movements across the Atlantic. France, financially exhausted from supporting American independence and burdened by an inequitable tax system, faced mounting debt and social unrest. The ideals of liberty, equality, and representative government that animated the American struggle resonated powerfully in France.
+
+### The Storming of the Bastille (July 14, 1789)
+On July 14, 1789, Parisians stormed the Bastille, a medieval fortress and symbol of royal tyranny. The fortress held only seven prisoners, but its capture became the defining moment of the French Revolution. The event galvanized revolutionary fervor and marked the beginning of the end for absolute monarchy in France.
+
+The immediate trigger was King Louis XVI's dismissal of popular finance minister Jacques Necker and the threat of military force against the assembly. Parisians, fearing a royal crackdown on the nascent revolution, took to the streets. The storming of the Bastille demonstrated the power of popular uprising and the vulnerability of the old regime.
+
+The fall of the Bastille became a symbol of liberation from tyranny and is celebrated annually in France as Bastille Day. The event inspired revolutionary movements throughout Europe and demonstrated that the ideals of the American Revolution—popular sovereignty, individual rights, and resistance to arbitrary authority—could take root in the Old World.
+
+### The Declaration of the Rights of Man and of the Citizen (August 26, 1789)
+Just weeks after the storming of the Bastille, the National Constituent Assembly adopted the Declaration of the Rights of Man and of the Citizen. This document, influenced by the American Declaration of Independence and Enlightenment philosophy, proclaimed universal principles of human rights and popular sovereignty.
+
+The Declaration asserted that all men are born free and equal in rights, that government derives its authority from the consent of the governed, and that citizens have inalienable rights to liberty, property, security, and resistance to oppression. It abolished feudalism and established the principle that law should express the general will of the people.
+
+The Declaration of the Rights of Man and of the Citizen became the philosophical foundation of the French Revolution and influenced democratic movements worldwide. It represented a radical break from the ancien régime and embodied the revolutionary conviction that political authority must rest on popular consent rather than divine right.
+
+### The Reign of Terror (1793-1794)
+The French Revolution's trajectory grew increasingly radical and violent. As foreign powers threatened invasion and internal factions competed for control, the revolutionary government turned to terror as a tool of state policy. The Committee of Public Safety, led by Robespierre, orchestrated mass executions of perceived enemies of the revolution.
+
+King Louis XVI was executed by guillotine on January 21, 1793. Queen Marie Antoinette followed on October 16, 1793. Thousands of nobles, clergy, and ordinary citizens accused of counter-revolutionary activity were executed. The Reign of Terror claimed an estimated 40,000 lives, though some estimates run higher.
+
+The Terror revealed the dark potential of revolutionary fervor unchecked by constitutional limits. Yet it also demonstrated the revolution's commitment to destroying the old aristocratic order. Robespierre himself was executed on July 28, 1794 (the Ninth of Thermidor), marking the beginning of the Terror's end.
+
 ## 1790s - Federalist Era
-The new government took shape under Washington and Adams. The Bill of Rights was ratified (1791), the First Bank of the United States was established, and political parties emerged. The Whiskey Rebellion (1794) tested federal authority.
+The new American government took shape under Washington and Adams. The Bill of Rights was ratified (1791), the First Bank of the United States was established, and political parties emerged. The Whiskey Rebellion (1794) tested federal authority. Meanwhile, the French Revolution continued to unfold, with its radical phases inspiring both admiration and fear among Americans.
 
 ## 1800s - Jeffersonian Democracy
 Thomas Jefferson's election (1800) marked the first peaceful transfer of power between parties. The Louisiana Purchase (1803) doubled the nation's size. The Lewis and Clark expedition (1804-1806) explored the new territory.

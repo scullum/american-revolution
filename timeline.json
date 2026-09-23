@@ -38,5 +38,27 @@
     "year": 1781,
     "title": "Battle of Yorktown",
     "summary": "American and French forces defeated the British army, effectively ending major combat operations and securing American independence."
+  },
+  {
+    "year": 1789,
+    "title": "Storming of the Bastille",
+    "summary": "Parisians stormed the Bastille, a medieval fortress and symbol of royal tyranny, marking the beginning of the French Revolution.",
+    "details": {
+      "date": "July 14, 1789",
+      "location": "Paris, France",
+      "significance": "The fortress held only seven prisoners, but its capture became the defining moment of the French Revolution and galvanized revolutionary fervor",
+      "cause": "King Louis XVI's dismissal of popular finance minister Jacques Necker and the threat of military force against the assembly",
+      "outcome": "The fall of the Bastille demonstrated the power of popular uprising and the vulnerability of the old regime, inspiring revolutionary movements throughout Europe"
+    }
+  },
+  {
+    "year": 1789,
+    "title": "Declaration of the Rights of Man and of the Citizen",
+    "summary": "The National Constituent Assembly adopted a declaration proclaiming universal principles of human rights and popular sovereignty, influenced by the American Revolution."
+  },
+  {
+    "year": 1793,
+    "title": "Execution of King Louis XVI",
+    "summary": "King Louis XVI was executed by guillotine on January 21, 1793, marking the radical phase of the French Revolution and the destruction of the ancien régime."
   }
 ]
