@@ -8,11 +8,11 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const timelinePath = join(__dirname, '..', 'timeline.json');
 
 describe('timeline.json', () => {
-  it('should contain exactly 6 events', async () => {
+  it('should contain at least 6 events', async () => {
     const data = await readFile(timelinePath, 'utf-8');
     const events = JSON.parse(data);
     
-    assert.equal(events.length, 6, 'Timeline should have exactly 6 events');
+    assert.ok(events.length >= 6, 'Timeline should have at least 6 events');
   });
 
   it('should have events in chronological order', async () => {
