@@ -21,6 +21,17 @@ Run all Node tests with:
 node --test tests/*.test.mjs
 ```
 
+## Acceptance checks
+
+Before submitting a change, verify the timeline is valid and all tests pass:
+
+```bash
+node --test tests/*.mjs
+node scripts/print-timeline.mjs
+```
+
+The test suite validates that the timeline contains the expected number of events in chronological order. The print script confirms the timeline data is well-formed and readable.
+
 ## 1770s - Revolution and Independence
 The decade of revolution: the Boston Tea Party (1773), the First Continental Congress (1774), the battles of Lexington and Concord (1775), the Declaration of Independence (1776), and the ongoing Revolutionary War that would secure American independence.
 
