@@ -35,6 +35,14 @@ node scripts/print-timeline.mjs --from 1770 --to 1781 --json
 
 All options are optional. Invalid years, missing values, unknown options, or invalid ranges will exit with a nonzero code and an error message.
 
+### Running tests
+
+Run all Node tests with:
+
+```bash
+node --test tests/*.test.mjs
+```
+
 ## 1770s - Revolution and Independence
 The decade of revolution: the Boston Tea Party (1773), the First Continental Congress (1774), the battles of Lexington and Concord (1775), the Declaration of Independence (1776), and the ongoing Revolutionary War that would secure American independence.
 
