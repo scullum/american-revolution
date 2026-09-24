@@ -21,7 +21,7 @@ const fail = (msg) => {
 
 if (!changed.includes(FILE)) {
   fail(
-    `${FILE} was not updated. Add a line to ${FILE} that starts with "- [forge] " and describes this change in one sentence, then commit and push.`
+    `${FILE} was not updated. Add a line to ${FILE} that starts with "- [forge] " or "- [forge-acceptance] " and describes this change in one sentence, then commit and push.`
   );
 }
 if (!existsSync(FILE)) fail(`${FILE} is listed as changed but does not exist in the checkout.`);
@@ -31,10 +31,13 @@ const added = execSync(`git diff ${base}...HEAD -- ${FILE}`, { encoding: "utf8" 
   .filter((l) => l.startsWith("+") && !l.startsWith("+++"))
   .map((l) => l.slice(1));
 
-if (!added.some((l) => /^- \[forge\] \S/.test(l))) {
+if (!added.some((l) => /^- \[(forge|forge-acceptance)\] \S/.test(l))) {
   fail(
-    `${FILE} changed, but no added line starts with "- [forge] ". Add exactly such a line describing this change, then commit and push.`
+    `${FILE} changed, but no added line starts with "- [forge] " or "- [forge-acceptance] ". Add exactly such a line describing this change, then commit and push.`
   );
 }
 
-console.log(`release notes ok: ${added.filter((l) => l.startsWith("- [forge] ")).length} new entr(y/ies)`);
+const forgeEntries = added.filter((l) => l.startsWith("- [forge] ")).length;
+const forgeAcceptanceEntries = added.filter((l) => l.startsWith("- [forge-acceptance] ")).length;
+const totalEntries = forgeEntries + forgeAcceptanceEntries;
+console.log(`release notes ok: ${totalEntries} new entr(y/ies)`);
