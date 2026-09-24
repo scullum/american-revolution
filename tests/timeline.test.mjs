@@ -248,4 +248,61 @@ describe('print-timeline CLI', () => {
       assert.ok(events[i - 1].year <= events[i].year, 'Events should be in chronological order');
     }
   });
+
+  // Regression tests for malformed year strings
+  it('should reject --from with numeric suffix (1773abc)', async () => {
+    const { code, stderr } = await runScript(['--from', '1773abc']);
+    
+    assert.notEqual(code, 0, 'Script should exit with nonzero code');
+    assert.match(stderr, /invalid|year|number|integer/i, 'Error message should mention invalid year');
+  });
+
+  it('should reject --to with numeric suffix (1773xyz)', async () => {
+    const { code, stderr } = await runScript(['--to', '1773xyz']);
+    
+    assert.notEqual(code, 0, 'Script should exit with nonzero code');
+    assert.match(stderr, /invalid|year|number|integer/i, 'Error message should mention invalid year');
+  });
+
+  it('should reject --from with decimal (1773.5)', async () => {
+    const { code, stderr } = await runScript(['--from', '1773.5']);
+    
+    assert.notEqual(code, 0, 'Script should exit with nonzero code');
+    assert.match(stderr, /invalid|year|number|integer/i, 'Error message should mention invalid year');
+  });
+
+  it('should reject --to with decimal (1776.9)', async () => {
+    const { code, stderr } = await runScript(['--to', '1776.9']);
+    
+    assert.notEqual(code, 0, 'Script should exit with nonzero code');
+    assert.match(stderr, /invalid|year|number|integer/i, 'Error message should mention invalid year');
+  });
+
+  it('should reject --from with leading whitespace and suffix (1773 abc)', async () => {
+    const { code, stderr } = await runScript(['--from', '1773 abc']);
+    
+    assert.notEqual(code, 0, 'Script should exit with nonzero code');
+    assert.match(stderr, /invalid|year|number|integer/i, 'Error message should mention invalid year');
+  });
+
+  it('should reject --to with mixed alphanumeric (17a73)', async () => {
+    const { code, stderr } = await runScript(['--to', '17a73']);
+    
+    assert.notEqual(code, 0, 'Script should exit with nonzero code');
+    assert.match(stderr, /invalid|year|number|integer/i, 'Error message should mention invalid year');
+  });
+
+  it('should reject --from with plus sign (1773+)', async () => {
+    const { code, stderr } = await runScript(['--from', '1773+']);
+    
+    assert.notEqual(code, 0, 'Script should exit with nonzero code');
+    assert.match(stderr, /invalid|year|number|integer/i, 'Error message should mention invalid year');
+  });
+
+  it('should reject --to with scientific notation (1e3)', async () => {
+    const { code, stderr } = await runScript(['--to', '1e3']);
+    
+    assert.notEqual(code, 0, 'Script should exit with nonzero code');
+    assert.match(stderr, /invalid|year|number|integer/i, 'Error message should mention invalid year');
+  });
 });

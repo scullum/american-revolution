@@ -6,6 +6,17 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const timelinePath = join(__dirname, '..', 'timeline.json');
 
 /**
+ * Validate that a string is a valid integer (no decimals, suffixes, or other characters)
+ * 
+ * @param {string} value - The string to validate
+ * @returns {boolean} True if the entire string is a valid integer
+ */
+function isValidInteger(value) {
+  // Check if the entire string matches the pattern of an optional sign followed by digits
+  return /^-?\d+$/.test(value);
+}
+
+/**
  * Parse command-line arguments into an options object.
  * Supports: --from YEAR, --to YEAR, --json
  * 
@@ -28,21 +39,19 @@ export function parseArgs(args) {
         throw new Error('--from requires a value');
       }
       const value = args[++i];
-      const year = parseInt(value, 10);
-      if (isNaN(year)) {
-        throw new Error(`Invalid year for --from: "${value}" is not a valid number`);
+      if (!isValidInteger(value)) {
+        throw new Error(`Invalid year for --from: "${value}" is not a valid integer`);
       }
-      options.from = year;
+      options.from = parseInt(value, 10);
     } else if (arg === '--to') {
       if (i + 1 >= args.length) {
         throw new Error('--to requires a value');
       }
       const value = args[++i];
-      const year = parseInt(value, 10);
-      if (isNaN(year)) {
-        throw new Error(`Invalid year for --to: "${value}" is not a valid number`);
+      if (!isValidInteger(value)) {
+        throw new Error(`Invalid year for --to: "${value}" is not a valid integer`);
       }
-      options.to = year;
+      options.to = parseInt(value, 10);
     } else if (arg === '--json') {
       options.json = true;
     } else {
