@@ -1,6 +1,26 @@
 # american-revolution
 A simple one-page overview of the American Revolution
 
+## Usage
+
+### Timeline explorer
+
+Explore the timeline of American history with the timeline CLI:
+
+```bash
+node scripts/print-timeline.mjs
+```
+
+This prints all events in chronological order, one per line in the format: `YEAR: TITLE - SUMMARY`.
+
+### Running tests
+
+Run all Node tests with:
+
+```bash
+node --test tests/*.test.mjs
+```
+
 ## 1770s - Revolution and Independence
 The decade of revolution: the Boston Tea Party (1773), the First Continental Congress (1774), the battles of Lexington and Concord (1775), the Declaration of Independence (1776), and the ongoing Revolutionary War that would secure American independence.
 
