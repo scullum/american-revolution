@@ -1,19 +1,38 @@
 #!/usr/bin/env node
 
-import { readFile } from 'node:fs/promises';
-import { fileURLToPath } from 'node:url';
-import { dirname, join } from 'node:path';
+import {
+  parseArgs,
+  loadTimeline,
+  filterEvents,
+  sortEvents,
+  formatText,
+  formatJson
+} from './timeline-parser.mjs';
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
-const timelinePath = join(__dirname, '..', 'timeline.json');
+async function main() {
+  try {
+    // Parse command-line arguments
+    const options = parseArgs(process.argv.slice(2));
 
-const data = await readFile(timelinePath, 'utf-8');
-const events = JSON.parse(data);
+    // Load timeline data
+    const events = await loadTimeline();
 
-// Sort by year
-const sorted = events.sort((a, b) => a.year - b.year);
+    // Sort by year
+    const sorted = sortEvents(events);
 
-// Print one line per event
-for (const event of sorted) {
-  console.log(`${event.year}: ${event.title} - ${event.summary}`);
+    // Filter by year range
+    const filtered = filterEvents(sorted, options.from, options.to);
+
+    // Format and output
+    if (options.json) {
+      console.log(formatJson(filtered));
+    } else {
+      console.log(formatText(filtered));
+    }
+  } catch (error) {
+    console.error(error.message);
+    process.exit(1);
+  }
 }
+
+main();

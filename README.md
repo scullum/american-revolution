@@ -1,6 +1,40 @@
 # american-revolution
 A simple one-page overview of the American Revolution
 
+## Timeline explorer
+
+The repository includes a Timeline explorer CLI tool for querying historical events.
+
+### Usage
+
+Print all events in chronological order:
+```bash
+node scripts/print-timeline.mjs
+```
+
+Filter events by year range (inclusive):
+```bash
+node scripts/print-timeline.mjs --from 1773 --to 1776
+```
+
+Output as JSON:
+```bash
+node scripts/print-timeline.mjs --json
+```
+
+Combine filters and output formats:
+```bash
+node scripts/print-timeline.mjs --from 1770 --to 1781 --json
+```
+
+### Options
+
+- `--from YEAR` - Include events from this year onwards (inclusive)
+- `--to YEAR` - Include events up to this year (inclusive)
+- `--json` - Output as JSON instead of text format
+
+All options are optional. Invalid years, missing values, unknown options, or invalid ranges will exit with a nonzero code and an error message.
+
 ## 1770s - Revolution and Independence
 The decade of revolution: the Boston Tea Party (1773), the First Continental Congress (1774), the battles of Lexington and Concord (1775), the Declaration of Independence (1776), and the ongoing Revolutionary War that would secure American independence.
 
